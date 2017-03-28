@@ -1,0 +1,253 @@
+/*styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;	
+    margin: 0 auto;
+    background-color: #EFEFEF;
+}
+a:focus, a:hover {
+	color: yellow !important;
+}
+/*styles for the header */
+header {
+	padding: .3em 0 0 0;
+	/*border-bottom: 3px solid #000000;*/
+	background-image: -moz-linear-gradient(
+	    30deg, #AA0000 0%, #AA0000 30%, #f6bb73 50%, #AA0000 80%, #AA0000 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #AA0000 0%, #AA0000 30%, #f6bb73 50%, #AA0000 80%, #AA0000 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #AA0000 0%, #AA0000 30%, #f6bb73 50%, #AA0000 80%, #AA0000 100%);
+	background-image: linear-gradient(
+	    30deg, #AA0000 0%, #AA0000 30%, #f6bb73 50%, #AA0000 80%, #AA0000 100%);
+	text-align: center;
+}
+header img {  
+	margin: 0 auto;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/*styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: center;
+	background-color: #000000;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;  
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: .25em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+	font-size: 160%
+}
+#nav_menu a.current {
+	color: #AA0000;
+}
+.cart{
+	float: none;
+	padding: 0 35%;
+}
+.cartlink {
+	display: initial !important;
+	padding: 0 !important;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+	right: 26%;
+    /*top: 50%;*/
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block
+}
+#nav_menu ul li:hover > ul li {
+	display: inline;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*styles for the main content */
+main {
+	clear: left;
+	min-height: 783px;
+}
+
+/*styles for the section */
+section {
+	width: 65.625%; 
+	/*float: right;*/
+	margin: 0 auto;
+	padding: 2.5% 2.5% 20px 2.5%;  
+}
+section h1 {
+	font-size: 150%;
+	padding: 1em 0 .25em 0;
+	margin: 0;
+	text-align: center;
+}
+section h2 {
+	text-align: center;
+	color: #AA0000;
+	font-size: 160%;
+	padding: .5em 0 1em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+#direct{
+	float: none;
+	padding-left: 3.5em;
+	font-size: 180%;
+	text-align: center;
+	margin: 2em auto;
+}
+#direct:hover{
+	color:#AA0000 !important;	
+}
+#direct:focus{
+	color:#AA0000 !important;	
+}
+/*styles for the accordian */
+#accordion{
+	padding-top: 8%;
+	width: 100%;
+}
+div a:hover{
+	color: #AA0000 !important;
+}
+div a:focus{
+	color: #AA0000 !important;
+}
+
+/*styles for the article */
+article {
+	padding: .5em 0;
+}
+article p {
+	text-align: center;
+	padding-top: .5em;
+}
+article ul p{
+	text-align: left;
+	font-weight: bold;
+}
+article ul li{
+	padding-top: .5em;
+}
+article a:hover{
+	color: #AA0000 !important;
+	font-style: italic;
+}
+article a:focus{
+	color: #AA0000 !important;
+	font-style: italic;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/*styles for the footer */
+footer {
+	background-color: #000000;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+.slicknav_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+	.cart{
+	display: none;
+	}
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center;}
+	section {
+		float: none;
+		width: 95%;                  
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;           
+		width: 95%;                    
+	}
+	article img { max-width: 30%; }
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background-color: #000000 !important;
+	}
+	.slicknav_menu li.cart{
+		display: none;
+	}
+	.cart{
+	display: none;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+	.cart{
+	display: none;
+	}
+}

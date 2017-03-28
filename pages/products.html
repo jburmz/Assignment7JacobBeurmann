@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Barry B's Gourmet Hot Sauce</title>
+	<link rel="shortcut icon" href="../images/wing.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+	<link rel="stylesheet" href="../jquery-ui-1.11.2.custom/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+	<script src="../jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+    <script>
+       $(document).ready(function() {
+		    $("#accordion").accordion({
+			collapsible: true,
+			heightStyle: "content"});
+	    });
+	</script>
+</head>
+
+<body>
+	<header>
+		<img src="../images/banner.png" alt="Barry Bs Banner" height="80">
+	</header>
+    <nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="../index.html">Home</a></li>
+        	<li><a href="../pages/products.html" class="current">Products</a></li>
+        	<li><a href="../pages/shop.html">Shop</a></li>
+        	<li><a href="../pages/history.html">About Us</a>
+				<!--<ul>
+                	<li><a href="../pages/history.html">Our History</a></li>
+                	<li><a href="../pages/awards.html">Awards</a></li>
+                	<li><a href="../pages/mission.html">Mission</a></li>
+            	</ul>-->
+			<li><a href="../pages/shop.html" class="cartlink"><img src="../images/cart.png" onmouseover="this.src='../images/cart2.png'" onmouseout="this.src='../images/cart.png'" alt="Shopping Cart" class="cart" height="40"></a></li>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+			<div id="accordion">
+                <h3>Barry B's Gourmet Hot Sauce</h3>
+                <div>
+                    <h3>The Original Gourmet Hot Sauce</h3>
+                    <p>The delicious sauce that started it all. Sweet, tangy, and not too spicy, Barry B's packs a satisfying kick but won't set your mouth on fire. Great with chicken wings, pork, or as a marinade for any meat or veggie product, Barry B's is
+					guaranteed to satisfy. Available in both 5 oz. and 12 oz. bottles.</p>
+                    <p><a href="../pages/shop.html">Click here to order some Barry B's!</a></p>
+                </div>
+                <h3>Barry B's "Blazin" Sauce</h3>
+                <div>
+                    <h3>The Medicinal Hot Sauce</h3>
+                    <p>Contrary to what the name suggests, Barry B's "Blazin" Sauce is no spicier than the traditional. Rather, this medicinal buffalo sauce comes packed with 200mg of THC per 1/2 cup (or 4 ounce) serving. Barry B's encourages you
+					to enjoy responsibly, and refrain from feeding the product to children or pets.</p>
+                    <p>Available only in California, Colorado, and Washington, at licensed dispensaries.</p>
+                </div>
+                <h3>Barry B's Swag</h3>
+                <div>
+                    <h3>Get Your Barry B's #SauceEmpire T-Shirts and Mugs Today</h3>
+                    <p>We have Barry B's and #SauceEmpire themed swag available for sale on our partner site, CafePress. Be sure to check out the link below!</p>
+                    <p><a href="http://www.cafepress.com/">Click here to order some Swag!</a></p>
+                </div>
+            </div>
+		</section>
+
+	</main>
+	<footer>
+		<p>&copy; 2016, Barry B's Gourmet Hot Sauce, Lakewood, OH 44107</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Barry B's Gourmet Hot Sauce</title>
+	<link rel="shortcut icon" href="images/wing.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<img src="images/banner.png" alt="Barry Bs Banner" height="80">
+	</header>
+    <nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="pages/products.html">Products</a></li>
+        	<li><a href="pages/shop.html">Shop</a></li>
+        	<li><a href="pages/history.html">About Us</a>
+				<ul>
+                	<li><a href="pages/history.html">Our History</a></li>
+                	<li><a href="pages/awards.html">Awards</a></li>
+                	<li><a href="pages/mission.html">Mission</a></li>
+            	</ul>
+			<li><a href="pages/shop.html" class="cartlink"><img src="images/cart.png" onmouseover="this.src='images/cart2.png'" onmouseout="this.src='images/cart.png'" alt="Shopping Cart" class="cart" height="40"></a></li>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Welcome to the home of Barry B's Gourmet Hot Sauce!</h2>
+			<p>Here, you can find information about your favorite gourmet cayenne pepper sauce. You can read about the history of the Barry B family, check out our awards section, and even place orders directly from our shop.
+			Please be sure to check out our Products tab for more information about our sauces and other products!</p>
+			
+			<h1>Where to find Barry B's</h1>
+			<article>
+				<p>In Additional to our online shop, you can also find Barry B's at these local retailers:</p>
+				<img src="images/bottle.png" alt="sauce bottle">
+				<ul style="list-style: none">
+					<li><p>Giant Eagle: <a href="http://www.gianteagle.com">Click on this link to visit their site!</a></p></li>
+					<li><p>Heinens: <a href="http://www.heinens.com">Click on this link to visit their site!</a></p></li>
+					<li><p>Trader Joes: <a href="http://www.traderjoes.com">Click on this link to visit their site!</a></p></li>
+					<li><p>Marc's: <a href="http://www.marcs.com">Click on this link to visit their site!</a></p></li>
+				</ul>
+			</article>
+			<h2><a href="pages/shop.html" id="direct">Or click here to order our sauce direct!</a></h2>
+		</section>
+
+	</main>
+	<footer>
+		<p>&copy; 2016, Barry B's Gourmet Hot Sauce, Lakewood, OH 44107</p>
+	</footer>
+</body>
+</html>
